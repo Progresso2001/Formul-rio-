@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplos labels</title>
+</head>
+<body>
+    <!-- Usando multipos labels em formulario -->
+    <form>
+        <p>requered fields are followed by<abbr title="requered">*</abbr></p>
+        <!-- so this: -->
+        <div>
+            <label for="iusername">Nome:</label>
+            <input type="text" name="username" id="iusername" autocomplete="off">
+            <label for="iusername"><abbr title="requered">*</abbr></label>
+        </div>
+        <!-- would be better done like this -->
+        <div>
+            <label for="iusername">
+                <span>Nome:</span>
+                <input type="text" id="iusername" name="username">
+            </label>
+        </div>
+        <!-- but this is probably best: -->
+        <div>
+            <label for="iusername">Nome:<abbr title="requered">*</abbr></label>
+            <input type="text" id="iusername" name="username">
+        </div>
+    </form>
+    
+</body>
+</html>

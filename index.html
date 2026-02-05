@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir logotipo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+           
+        }
+       
+        header img{
+            width: 150px;
+            height:auto;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="fotos/logojocas.jpg" alt="logotipo">
+    </header>
+
+    <fieldset>
+        <legend>Cadastro de registro</legend>
+        <form action="/formuario-de-dados" method="post">
+
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="Nome" id="nome">
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg" ></textarea>
+            </p>
+            <p>
+                <button>Enviar Mensagem</button>
+            </p>
+        </form>
+    </fieldset>
+
+    
+    
+</body>
+</html>
