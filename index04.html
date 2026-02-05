@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select e datalist</title>
+</head>
+<body>
+    <h1>Exemplos de formularios</h1>
+    <form action="cadastro" method="post" autocomplete="off">
+        <p>
+            <label for="iestado">Estado: </label>
+            <select name="estado" id="iestado">
+                <option value="">---Escolha---</option>
+                <optgroup label="Provincias do Nordeste">
+                    <option value="Ld">Luanda</option>
+                    <option value="CB">Cabinda</option>
+                    <option value="BL">Benguela</option>
+                    <option value="BE">Bié</option>
+                    <option value="HB">Huambo</option>
+                </optgroup>
+
+                <optgroup label="Provincias do Sudeste">
+                    <option value="ML">Malange</option>
+                    <option value="CX">Caxito</option>
+                    <option value="UG">Uige</option>
+                    <option value="LS">Lunda Sul</option>
+                    <option value="CN">Cunene</option>
+                </optgroup>
+                
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option >Administrador</option>
+                <option >Gerente</option>
+                <option >Professor</option>
+                <option >Desenvolvedor</option>
+                <option >Analista de Dados</option>
+                <option >Gestora</option>
+                
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="Mensagem" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
